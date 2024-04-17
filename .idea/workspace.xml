@@ -4,27 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4f9272-3185-45b2-bf1e-b740095e03eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/user/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/user/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6d4f9272-3185-45b2-bf1e-b740095e03eb" name="Changes" comment="Second Part">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/stock/TVStockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/TVDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/TV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/TVService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/background-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/Dell-Latitude 14 5411.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/Dell-Vostro 15 3515-377831.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/HP-Pavilion 14-dv2005ci.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/HP-ProBook 455 G9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/Lenovo-IdeaPad Gaming 3 15IHU6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/laptop/Lenovo-IdeaPad Slim 3 15AMN8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slider/sam-fridge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slider/sam-phone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slider/sam-tv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/Horizont-32LE7511D.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/Horizont-55LE7511D.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/LG-55UR78001LJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/LG-65UR78001LJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/Samsung-UE32T5300AUXCE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/tv/Samsung-UE43AU7002UXRU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/filters/tv-filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/slider/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/user/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/db/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/db/ConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,6 +80,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.2304_marketplace [org.eclipse.jetty:jetty-maven-plugin:11.0.20:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -87,6 +103,19 @@
       <option name="presentableId" value="Default" />
       <updated>1712681821480</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Part">
+      <option name="closed" value="true" />
+      <created>1712946985301</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712946985301</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Part" />
   </component>
 </project>

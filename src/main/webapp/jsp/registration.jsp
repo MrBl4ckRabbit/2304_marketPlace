@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+       <jsp:include page="<%=JSPConstant.MENU_JSP %>"/>
+       <img class="default-image" scr="<%=JSPConstant.BACKGROUND_IMAGE%>" alt="img">
        <div class="form-box">
             <h2>Registration</h2>
             <form action="<%=AppConstant.REGISTRATION_CONTROLLER%>" method="post">
