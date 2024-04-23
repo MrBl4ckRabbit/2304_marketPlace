@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d4f9272-3185-45b2-bf1e-b740095e03eb" name="Changes" comment="Third Part">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/stock/LaptopStockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/LaptopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/LaptopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/filters/laptop-filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/filters/laptop-page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/filters/tv-page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/stock/TVStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/stock/TVStockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/TVDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/TVDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/TVService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/TVService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713378307536</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Third Part">
+      <option name="closed" value="true" />
+      <created>1713464258788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713464258788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

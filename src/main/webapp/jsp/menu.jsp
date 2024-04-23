@@ -24,6 +24,9 @@
          <li class="nav-li float-left">
                     <a href="<%=AppConstant.TV_STOCK%>">TV</a>
                   </li>
+         <li class="nav-li float-left">
+                             <a href="<%=AppConstant.LAPTOP_STOCK%>">Laptop</a>
+                           </li>
       </c:otherwise>
     </c:choose>
 </ul>

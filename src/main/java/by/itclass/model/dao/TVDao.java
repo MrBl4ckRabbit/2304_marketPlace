@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import static by.itclass.constants.DBConstant.*;
 
@@ -26,9 +27,38 @@ public class TVDao {
     }
 
     public List<TV> selectAllTV() {
+
+        return fillingCollection(SELECT_ALL_TV);
+    }
+
+    public List<TV> selectFilteredTV(String[] vendors, String[] size, String from, String to) {
+        var query = new StringBuilder(SELECT_ALL_TV);
+        if (Objects.nonNull(vendors) || Objects.nonNull(size) || !from.isEmpty() || !to.isEmpty()) {
+            query.append(" WHERE ")
+                    .append(getQueryAppendix(vendors, size, from, to));
+
+        }
+        return fillingCollection(query.toString());
+    }
+
+    private String getQueryAppendix(String[] vendors, String[] sizes, String from, String to) {
+        var queryList = new ArrayList<String>();
+        queryList.add(Objects.nonNull(vendors) ? "(vendor= '"
+                + String.join("' OR vendor= '", vendors) + "')" : null);
+        queryList.add(Objects.nonNull(sizes) ? "(screenSize= "
+                + String.join(" OR screenSize= ", sizes) + ")" : null);
+        queryList.add(!from.isEmpty() ? "price >= " + Double.parseDouble(from) : null);
+        queryList.add(!to.isEmpty() ? "price <= " + Double.parseDouble(to) : null);
+
+        return queryList.stream()
+                .filter(Objects::nonNull)
+                .collect(Collectors.joining(" AND "));
+    }
+
+    private ArrayList<TV> fillingCollection(String query) {
         var tvs = new ArrayList<TV>();
         try (var cn = ConnectionManager.getConnection();
-             var ps = cn.prepareStatement(SELECT_ALL_TV)) {
+             var ps = cn.prepareStatement(query)) {
             var rs = ps.executeQuery();
             while (rs.next()) {
                 var id = rs.getInt(ID_COL);
@@ -44,4 +74,5 @@ public class TVDao {
 
         return tvs;
     }
+
 }
