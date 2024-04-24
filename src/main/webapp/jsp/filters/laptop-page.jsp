@@ -19,6 +19,16 @@
                <p>Vendor ${laptop.vendor}</p>
                 <p>Model ${laptop.model}</p>
                  <p>Price ${laptop.price} byn</p>
+                 <form method="post" action="<%=AppConstant.CART_CONTROLLER%>">
+                                    <input type="hidden" name="<%=JSPConstant.CART_ACTION_PARAM%>" value="add">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_TYPE_PARAM%>" value="2">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_ID_PARAM%>" value="${laptop.id}">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_VENDOR_PARAM%>" value="${laptop.vendor}">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_MODEL_PARAM%>" value="${laptop.model}">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_PRICE_PARAM%>" value="${laptop.price}">
+                                    <input type="hidden" name="<%=JSPConstant.ITEM_QUANTITY_PARAM%>" value="1">
+                                    <input type="submit" value="Add to cart">
+                                  </form>
                </div>
              </c:forEach>
        </c:when>

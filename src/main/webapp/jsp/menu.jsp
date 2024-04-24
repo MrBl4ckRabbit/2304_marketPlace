@@ -27,6 +27,9 @@
          <li class="nav-li float-left">
                              <a href="<%=AppConstant.LAPTOP_STOCK%>">Laptop</a>
                            </li>
+         <li class="nav-li">
+               <a href="<%=JSPConstant.CART_JSP%>">Cart</a>
+               </li>
       </c:otherwise>
     </c:choose>
 </ul>
