@@ -1,9 +1,6 @@
 package by.itclass.controllers;
 
-import by.itclass.model.services.CartService;
-import by.itclass.model.services.LaptopService;
-import by.itclass.model.services.TVService;
-import by.itclass.model.services.UserService;
+import by.itclass.model.services.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,6 +17,7 @@ public abstract class AbstractController extends HttpServlet {
     protected TVService tvService;
     protected LaptopService laptopService;
     protected CartService cartService;
+    protected OrderService orderService;
 
     @Override
     public void init() throws ServletException {
@@ -27,6 +25,7 @@ public abstract class AbstractController extends HttpServlet {
         tvService = TVService.getInstance();
         laptopService = LaptopService.getInstance();
         cartService=CartService.getInstance();
+        orderService = OrderService.getInstance();
     }
 
     @Override

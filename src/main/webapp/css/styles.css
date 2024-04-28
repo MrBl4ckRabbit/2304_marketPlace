@@ -112,129 +112,176 @@ body {
     margin-right: auto;
 }
 
-/*styles for filter*/
-
-.vertical-menu{
- width:300px;
- float:right;
+/*Styles for filter*/
+.vertical-menu {
+    width: 300px;
+    float: right;
 }
 
-.vertical-menu a{
- background-color:lightgray;
- color:black;
- display:block;
- padding:12px;
+.vertical-menu a {
+    background-color: lightgray;
+    color: black;
+    display: block;
+    padding: 12px;
 }
 
-.vertical-menu a:hover{
- background-color:dimgray;
+.vertical-menu a:hover {
+    background-color: dimgray;
 }
 
-.vertical-menu a.active{
- background-color:green;
- color:white;
- text-align:center;
- font-size:22px;
+.vertical-menu a.active {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 22px;
 }
 
-.filter-container{
- display:block;
- position:relative;
- padding-left:70px;
- padding-bottom:12px;
- cursor:pointer;
- font-size:22px;
- background-color:lightgray;
+.filter-container {
+    display: block;
+    position: relative;
+    padding-left: 70px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: lightgray;
 }
 
-
-.filter-container input[type=checkbox]{
- position:absolute;
- cursor:pointer;
- height:16px;
- width:16px;
- left:20px;
- top:0;
+.filter-container input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    left: 20px;
+    top: 0;
 }
 
-.filter-container input{
- position:absolute;
- cursor:pointer;
- height:25px;
- width:50px;
- left:5px;
- top:-4px;
+.filter-container input {
+    position: absolute;
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+    left: 5px;
+    top: -4px;
 }
 
-.vertical-menu input[type=submit]{
- width:297px;
- font-size:22px;
+.vertical-menu input[type=submit] {
+    width: 297px;
+    font-size: 22px;
 }
 
-/*Add's button style*/
-
-.stock-item-box input[type=submit]{
- width:200px;
- background-color:green;
- border:none;
- color:white;
- padding:16px 32px;
- margin:0px 25px;
- cursor:pointer;
+/*Add to cart button styles */
+.stock-item-box input[type=submit] {
+    width: 200px;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 0 25px;
+    cursor: pointer;
 }
 
-/*Cart page style*/
-
-.cart-item-container{
- height:90px;
+/*Cart page styles */
+.cart-item-container {
+    height: 90px;
 }
 
-.cart-img{
-height:70px;
-float:left;
-border:1px solid black;
-margin:5px 50px 10px 0;
+.cart-img {
+    height: 70px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px 50px 10px 0;
 }
 
-.cart-text{
-margin: 0 0 10px;
+.cart-text {
+    margin: 0 0 10px;
 }
 
-.cart-item-container input[type=submit]{
-width:140px;
-background-color:green;
-color:white;
-padding:10px;
-margin:0;
-cursor:pointer;
+.cart-item-container input[type=submit] {
+    width: 140px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
 }
 
 .cart-item-container input[type=submit].change-number {
- background-color:green;
- color:white;
- border-radius:2em;
- padding: .5em .8em;
- width:28px;
- cursor:pointer;
+    background-color: green;
+    color: white;
+    border-radius: 2em;
+    padding: .5em .8em;
+    width: 28px;
+    cursor: pointer;
 }
 
-.cart-item-container form{
-display:inline-block;
+.cart-item-container form {
+    display: inline-block;
 }
 
+/*Number field styles*/
+.cart-item-container input[type=number] {
+    -webkit-appearance: textfield;     -moz-appearance: textfield;
+    appearance: textfield;  }
 
+.cart-item-container input[type=number]::-webkit-inner-spin-button,
+.cart-item-container input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
 
+.number-input {
+    display: inline-flex;  }
 
+.number-input button {
+    background-color: white;
+    border: 1px solid black;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
 
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
 
+.number-input input[type=number] {
+    max-width: 3rem;
+    padding: .5rem;
+    border: none;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
 
+/*Order container styles*/
+.order-container {
+    width: 600px;
+    text-align: center;
+}
 
+.order-container input {
+    width: 600px;
+    padding: 5px 0;
+    margin: 15px 0;
+}
 
-
-
-
-
-
-
-
+.order-container input[type=submit] {
+    width: 150px;
+    background-color: green;
+    color: white;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

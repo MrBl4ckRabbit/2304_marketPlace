@@ -12,6 +12,7 @@ public class JSPConstant {
     public static final String MEMORY_SIZE_PARAM = "memorySize";
     public static final String PRICE_FROM_PARAM = "PriceFrom";
     public static final String PRICE_TO_PARAM = "PriceTo";
+
     public static final String CART_ACTION_PARAM = "cartAction";
     public static final String ITEM_TYPE_PARAM = "itemType";
     public static final String ITEM_ID_PARAM = "itemId";
@@ -20,12 +21,14 @@ public class JSPConstant {
     public static final String ITEM_PRICE_PARAM = "itemPrice";
     public static final String ITEM_QUANTITY_PARAM = "itemQuantity";
 
+    public static final String ADDRESS_PARAM = "address";
 
     public static final String MESSAGE_ATTR = "message";
     public static final String USER_ATTR = "user";
     public static final String TVS_ATTR = "tvs";
     public static final String LAPTOPS_ATTR = "laptops";
     public static final String ORDER_ITEMS_ATTR = "orderItems";
+    public static final String ORDER_ID_ATTR = "orderId";
 
     public static final String LOGIN_JSP = "/jsp/login.jsp";
     public static final String HOME_JSP = "/jsp/home.jsp";
