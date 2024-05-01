@@ -30,6 +30,9 @@
          <li class="nav-li">
                <a href="<%=JSPConstant.CART_JSP%>">Cart</a>
                </li>
+         <li class="nav-li">
+                <a href="<%=AppConstant.ORDERS_HISTORY_CONTROLLER%>">History</a>
+         </li>
       </c:otherwise>
     </c:choose>
 </ul>

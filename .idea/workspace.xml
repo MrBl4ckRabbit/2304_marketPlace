@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4f9272-3185-45b2-bf1e-b740095e03eb" name="Changes" comment="cart Part">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/order/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/OrderService.java" afterDir="false" />
+    <list default="true" id="6d4f9272-3185-45b2-bf1e-b740095e03eb" name="Changes" comment="cart Part 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/order/OrdersHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/order/PrintOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/Receipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/entities/ReceiptItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/receipt.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/AppConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/DBConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/constants/JSPConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/controllers/AbstractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itclass/model/services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713983738592</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cart Part 2">
+      <option name="closed" value="true" />
+      <created>1714327932373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714327932373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +140,7 @@
     <MESSAGE value="Third Part" />
     <MESSAGE value="fourth Part" />
     <MESSAGE value="cart Part" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart Part" />
+    <MESSAGE value="cart Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart Part 2" />
   </component>
 </project>
