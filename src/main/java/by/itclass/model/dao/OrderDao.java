@@ -23,18 +23,6 @@ public class OrderDao {
     public static final String SELECT_ORDERS_BY_USER = "Select id,date,address From orders Where userId = ? ORDER BY id DESC";
     public static final String SELECT_ORDER = "Select date,address From orders Where Id = ?";
     public static final String SELECT_ITEMS = "Select itemType,itemId,itemPrice,quantity From orderItem Where orderId = ?";
-    private static OrderDao dao;
-
-    private OrderDao() {
-        ConnectionManager.init();
-    }
-
-    public static OrderDao getInstance() {
-        if (Objects.isNull(dao)) {
-            return new OrderDao();
-        }
-        return dao;
-    }
 
     public boolean saveOrder(HttpSession session, String address) {
         var user = (User) session.getAttribute(USER_ATTR);

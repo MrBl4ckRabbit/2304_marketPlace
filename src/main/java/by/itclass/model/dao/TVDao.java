@@ -13,23 +13,6 @@ import static by.itclass.constants.DBConstant.*;
 
 public class TVDao {
     public static final String SELECT_ALL_TV = "Select * From tv";
-    private static TVDao dao;
-
-    private TVDao() {
-        ConnectionManager.init();
-    }
-
-    public static TVDao getInstance() {
-        if (Objects.isNull(dao)) {
-            dao = new TVDao();
-        }
-        return dao;
-    }
-
-    public List<TV> selectAllTV() {
-
-        return fillingCollection(SELECT_ALL_TV);
-    }
 
     public List<TV> selectFilteredTV(String[] vendors, String[] size, String from, String to) {
         var query = new StringBuilder(SELECT_ALL_TV);
@@ -75,4 +58,7 @@ public class TVDao {
         return tvs;
     }
 
+    public List<TV> selectAllTV() {
+        return fillingCollection(SELECT_ALL_TV);
+    }
 }

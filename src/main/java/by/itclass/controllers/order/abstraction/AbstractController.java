@@ -1,8 +1,7 @@
-package by.itclass.controllers;
+package by.itclass.controllers.order.abstraction;
 
 import by.itclass.model.services.*;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -13,20 +12,6 @@ import static by.itclass.constants.JSPConstant.MESSAGE_ATTR;
 
 
 public abstract class AbstractController extends HttpServlet {
-    protected UserService userService;
-    protected TVService tvService;
-    protected LaptopService laptopService;
-    protected CartService cartService;
-    protected OrderService orderService;
-
-    @Override
-    public void init() throws ServletException {
-        userService = UserService.getInstance();
-        tvService = TVService.getInstance();
-        laptopService = LaptopService.getInstance();
-        cartService=CartService.getInstance();
-        orderService = OrderService.getInstance();
-    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

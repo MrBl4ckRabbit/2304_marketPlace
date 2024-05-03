@@ -9,20 +9,15 @@ import java.util.Objects;
 
 import static by.itclass.constants.JSPConstant.*;
 
-public class TVService {
-    private static TVService service;
-    private TVDao dao;
+public class TVService implements Service {
 
-    private TVService() {
-        dao = TVDao.getInstance();
+    private final TVDao dao;
+
+    public TVService() {
+        dao = new TVDao();
     }
 
-    public static TVService getInstance() {
-        if (Objects.isNull(service)) {
-            service = new TVService();
-        }
-        return service;
-    }
+
 
     public List<TV> getTVS(Map<String, String[]> params) {
         if (params.isEmpty()) {

@@ -13,20 +13,14 @@ import java.util.Objects;
 import static by.itclass.constants.JSPConstant.*;
 import static by.itclass.constants.JSPConstant.PRICE_TO_PARAM;
 
-public class LaptopService {
-    private static LaptopService service;
-    private LaptopDao dao;
+public class LaptopService implements Service {
 
-    private LaptopService() {
-        dao = LaptopDao.getInstance();
+    private final LaptopDao dao;
+
+    public LaptopService() {
+        dao = new LaptopDao();
     }
 
-    public static LaptopService getInstance() {
-        if (Objects.isNull(service)) {
-            service = new LaptopService();
-        }
-        return service;
-    }
 
     public List<Laptop> getLaptops(Map<String, String[]> params) {
         var laptops = dao.selectAllLaptop();

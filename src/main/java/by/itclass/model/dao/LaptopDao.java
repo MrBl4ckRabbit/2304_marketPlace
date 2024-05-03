@@ -14,18 +14,6 @@ import static by.itclass.constants.DBConstant.*;
 
 public class LaptopDao {
     public static final String SELECT_ALL_LAPTOP = "Select * From laptop";
-    private static LaptopDao dao;
-
-    private LaptopDao() {
-        ConnectionManager.init();
-    }
-
-    public static LaptopDao getInstance() {
-        if (Objects.isNull(dao)) {
-            dao = new LaptopDao();
-        }
-        return dao;
-    }
 
     public List<Laptop> selectAllLaptop() {
 
